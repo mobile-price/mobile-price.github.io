@@ -1,25 +1,21 @@
-/* line 5, /Users/khiav223577/Desktop/github/eprice/app/assets/stylesheets/devices.scss */
 body {
   background-color: #fbfbfb;
 }
 
-/* line 9, /Users/khiav223577/Desktop/github/eprice/app/assets/stylesheets/devices.scss */
 #price-chart {
   max-width: 1800px;
 }
 
-/* line 13, /Users/khiav223577/Desktop/github/eprice/app/assets/stylesheets/devices.scss */
 .devices {
   margin: 5px 10px;
 }
-/* line 16, /Users/khiav223577/Desktop/github/eprice/app/assets/stylesheets/devices.scss */
+
 .devices:after {
   content: '';
   display: block;
   clear: both;
 }
 
-/* line 23, /Users/khiav223577/Desktop/github/eprice/app/assets/stylesheets/devices.scss */
 .device {
   width: 234px;
   margin: 5px;
@@ -29,45 +25,50 @@ body {
   font-size: 14px;
   font-family: Microsoft JhengHei, Arial, Helvetica, sans-serif;
 }
-/* line 32, /Users/khiav223577/Desktop/github/eprice/app/assets/stylesheets/devices.scss */
+
 .device .name {
+  font-weight: bold;
   color: #666;
   font-size: 16px;
   margin-bottom: 4px;
 }
-/* line 38, /Users/khiav223577/Desktop/github/eprice/app/assets/stylesheets/devices.scss */
+
 .device .price {
   color: #06f;
 }
-/* line 43, /Users/khiav223577/Desktop/github/eprice/app/assets/stylesheets/devices.scss */
+
+.device .price_chg, .device .price {
+  font-weight: bold;
+}
+
 .device .price_chg.more-expensive {
   color: #33cc33;
 }
-/* line 44, /Users/khiav223577/Desktop/github/eprice/app/assets/stylesheets/devices.scss */
+
 .device .price_chg.normal {
-  color: black;
+  color: #444;
 }
-/* line 45, /Users/khiav223577/Desktop/github/eprice/app/assets/stylesheets/devices.scss */
+
 .device .price_chg.depreciating1 {
-  color: #ffd900;
+  color: #ffbb25;
 }
-/* line 46, /Users/khiav223577/Desktop/github/eprice/app/assets/stylesheets/devices.scss */
+
 .device .price_chg.depreciating2 {
-  color: #ffbb00;
+  color: #ff9016;
 }
-/* line 47, /Users/khiav223577/Desktop/github/eprice/app/assets/stylesheets/devices.scss */
+
 .device .price_chg.depreciating3 {
-  color: #ff9933;
+  color: #ff6609;
 }
-/* line 48, /Users/khiav223577/Desktop/github/eprice/app/assets/stylesheets/devices.scss */
+
 .device .price_chg.depreciating4 {
-  color: #ff6600;
+  color: #ff3d11;
 }
-/* line 49, /Users/khiav223577/Desktop/github/eprice/app/assets/stylesheets/devices.scss */
+
 .device .price_chg.depreciating5 {
   color: #ff0066;
 }
-/* line 52, /Users/khiav223577/Desktop/github/eprice/app/assets/stylesheets/devices.scss */
+
 .device .first_data, .device .last_date {
   color: #999;
   font-size: 12px;
