@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<!-- saved from url=(0022)http://localhost:5000/ -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>手機價格走勢</title>
   <meta name="csrf-param" content="authenticity_token">
-<meta name="csrf-token" content="GTma3xMTu7N96HejuguqZv1KBrUJo6lJ7HMxaL7u2h0AjUZYVsDqPn0Q6S8sdhuHGGz6RphkNTrf5JZpxBD33A==">
-  
 
+
+  <script src="./index_files/devices-989657b6d1dd69fe496bd03ae21606466e028dea1f5c49d4adba0a94fb1be0ab.js"></script>
   <link rel="stylesheet" media="all" href="./index_files/devices-321560179f2a72c33d465d1b74f933dac063e5caa71963ee37ca14820b20be4d.css">
-  <script type="text/javascript" async="" src="./index_files/analytics.js"></script><script src="./index_files/devices-989657b6d1dd69fe496bd03ae21606466e028dea1f5c49d4adba0a94fb1be0ab.js"></script>
   <script src="./index_files/Chart.min.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async="" src="./index_files/js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89612344-3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -1063,27 +1062,6 @@
         <div class="last_date">最後更新於: 2020-04-20</div>
       </div>
   </div>
-
-<script>
-  $(function(){
-    $('.device .price_chg').each(function(){
-      var $this = $(this).append(' ');
-      var days = parseInt($this.attr('days'));
-      var avgChg = (parseInt($this.text()) || 0) / days;
-      if (avgChg > 120) $this.addClass('more-expensive').append('↑↑↑↑↑');
-      else if (avgChg > 80) $this.addClass('more-expensive').append('↑↑↑↑');
-      else if (avgChg > 50) $this.addClass('more-expensive').append('↑↑↑');
-      else if (avgChg > 30) $this.addClass('more-expensive').append('↑↑');
-      else if (avgChg > 0) $this.addClass('more-expensive').append('↑');
-      else if (avgChg > -10) $this.addClass('normal');
-      else if (avgChg > -30) $this.addClass('depreciating1').append('↓');
-      else if (avgChg > -50) $this.addClass('depreciating2').append('↓↓');
-      else if (avgChg > -80) $this.addClass('depreciating3').append('↓↓↓');
-      else if (avgChg > -120) $this.addClass('depreciating4').append('↓↓↓↓');
-      else $this.addClass('depreciating5').append('↓↓↓↓↓');
-    });
-  });
-</script>
 
 
 
